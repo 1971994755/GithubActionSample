@@ -76,6 +76,8 @@ def get_access_token():
 #     sentence = all_dict['returnObj'][0]
 #     daily_love = sentence
 #     return daily_love
+
+
 def get_daily_love():
     # 固定返回打卡提醒
     daily_love = "【17:30】记得下班打卡！！"
