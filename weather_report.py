@@ -68,13 +68,17 @@ def get_access_token():
     return access_token
 
 
+# def get_daily_love():
+#     # 每日一句情话
+#     url = "https://api.lovelive.tools/api/SweetNothings/Serialization/Json"
+#     r = requests.get(url)
+#     all_dict = json.loads(r.text)
+#     sentence = all_dict['returnObj'][0]
+#     daily_love = sentence
+#     return daily_love
 def get_daily_love():
-    # 每日一句情话
-    url = "https://api.lovelive.tools/api/SweetNothings/Serialization/Json"
-    r = requests.get(url)
-    all_dict = json.loads(r.text)
-    sentence = all_dict['returnObj'][0]
-    daily_love = sentence
+    # 固定返回打卡提醒
+    daily_love = "【17:30】记得下班打卡！！"
     return daily_love
 
 
@@ -130,4 +134,4 @@ def weather_report(this_city):
 
 
 if __name__ == '__main__':
-    weather_report("淄博")
+    weather_report("上饶")
